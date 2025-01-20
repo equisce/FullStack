@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5e6d6, #e7c5b4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #8a1c1c;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 1.5em;
+    color: #8a1c1c;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.tag {
+    background: #2e5233;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.btn {
+    background: #8a1c1c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #731515;
+}
+
+#dato-curioso {
+    display: none;
+    margin-top: 15px;
+    color: #2e5233;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+        }
+
+    .tags {
+        gap: 5px;
+        }
+
+    .btn {
+        padding: 8px 12px;
+        }
+}
